@@ -1,0 +1,17 @@
+version: '3.2'
+
+services:
+
+  classifier:
+    build: .
+    image: "snomed-classification-service"
+    container_name: "classifier"
+    ports:
+        - 8089:8089
+    environment:
+        JAVA_OPTS: "-Xmx3g"
+    volumes:
+        - type: bind
+          source: ./classifier
+          target: /store
+    
