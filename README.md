@@ -26,8 +26,8 @@ Output will be created in the `./classifier/classifications/` directory.
 ### Example classification call
 ```
 curl -X POST \
-  'http://localhost:8089/classification-service/classifications \
-  ?previousRelease=SnomedCT_Release_AU1000036_20180131.zip \
-  &reasonerId=org.semanticweb.elk.owlapi.ElkReasonerFactory' \
+  "http://localhost:8089/classification-service/classifications\
+  ?previousRelease=SnomedCT_Release_AU1000036_20180131.zip\
+  &reasonerId=org.semanticweb.elk.owlapi.ElkReasonerFactory" \
   -F rf2Delta=@classifier/releases/SnomedCT_Release_AU1000036_20180630.zip
 ```
