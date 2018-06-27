@@ -17,10 +17,11 @@ docker-compose up
 ## Using the service
 Refer to the [classification service project](https://github.com/IHTSDO/classification-service) for more details.
 
-By default, a local directory is mounted into the container to source RF2 archive files.
+Browse to `http://localhost:8089/classification-service`
 
-Place previous release RF2 SNAPSHOT and new RF2 DELTA archive files into `./classifier/releases`
-Output is create in the `./classifier/classifications/` directory. 
+By default, a local directory is mounted into the container to source RF2 archive files.\
+Place the previous release RF2 SNAPSHOT and new RF2 DELTA archive files into the `./classifier/releases` directory.\
+Output will be created in the `./classifier/classifications/` directory. 
 
 ### Example classification call
 ```
